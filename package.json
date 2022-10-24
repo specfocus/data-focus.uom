@@ -1,0 +1,34 @@
+{
+  "name": "@specfocus/spec-focus.uom",
+  "version": "1.0.0",
+  "description": "Units and Matrics parser",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "exjest": "yarn node --experimental-vm-modules $(yarn bin jest)",
+    "test": "yarn exjest --coverage",
+    "test:watch": "yarn exjest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/specfocus/spec-focus.uom.git"
+  },
+  "keywords": [
+    "UoM",
+    "Unit",
+    "Metric"
+  ],
+  "author": "Lucas Oromi <lucas@specfocus.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/specfocus/spec-focus.uom/issues"
+  },
+  "homepage": "https://github.com/specfocus/spec-focus.uom#readme",
+  "devDependencies": {
+    "jest": "^29.2.1",
+    "ts-jest": "^29.0.3",
+    "tslint": "^6.1.3",
+    "typescript": "^4.8.4"
+  }
+}
